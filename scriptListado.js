@@ -8,7 +8,7 @@ function fetchUsers(numUsers) {
 
       data.results.forEach((user) => {
         const userCard = document.createElement("div");
-        userCard.className = "col-lg-4 col-md-6 col-sm-12 mb-4";
+        userCard.className = "col-lg-2 col-md-6 col-sm-12 mb-4";
 
         userCard.innerHTML = `
             <div class="card" id="cardListado">

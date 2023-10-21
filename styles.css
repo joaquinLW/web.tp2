@@ -42,8 +42,8 @@ body {
 /* Estilo para hacer las imágenes circulares más pequeñas y centradas en las tarjetas */
 #cardListado img {
     border-radius: 50%;
-    width: 200px; /* Ancho deseado para el círculo */
-    height: 200px; /* Alto deseado para el círculo */
+    width: 150px; /* Ancho deseado para el círculo */
+    height: 150px; /* Alto deseado para el círculo */
     display: block;
     margin: 0 auto; /* Centrar horizontalmente */
   }
