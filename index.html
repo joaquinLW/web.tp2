@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gestion Estudiantes</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-white border border-dark"
+      >
+        <div class="container-fluid">
+          <img src="logo.jpeg" alt="Imagen" width="80 px" />
+          <a class="navbar-brand me-auto" href="#">SysAcad</a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-3 mb-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active bg-info"
+                  href="index.html"
+                  aria-current="page"
+                  >Gestion Estudiantes<span class="visually-hidden"
+                    >(current)</span
+                  ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="listadoUsuarios.html"
+                  >Listado de Usuarios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buscadorShows.html"
+                  >Buscador de Shows de TV</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb border border-dark border-1">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+          <li class="breadcrumb-item active">Gestion Estudiantes</li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="text">Lista de Estudiantes</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Legajo</th>
+                  <th>Apellidos</th>
+                  <th>Nombres</th>
+                  <th>Nota</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="student-list">
+                <!-- Aquí se llenará la lista de estudiantes dinámicamente con JavaScript -->
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <div class="add-student-container">
+              <h2 class="text">Agregar Estudiante</h2>
+              <form id="add-student-form">
+                <div class="form-group">
+                  <label for="legajo" class="text">Legajo:</label>
+                  <input
+                    type="text"
+                    id="legajo"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="apellidos" class="text">Apellidos:</label>
+                  <input
+                    type="text"
+                    id="apellidos"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nombres" class="text">Nombres:</label>
+                  <input
+                    type="text"
+                    id="nombres"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nota" class="text"> Nota:</label>
+                  <input
+                    type="number"
+                    id="nota"
+                    class="form-control"
+                    required
+                    min="0"
+                    max="100"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

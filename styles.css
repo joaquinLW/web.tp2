@@ -1,0 +1,65 @@
+header{
+    font-family: 'Mooli', sans-serif;
+}
+main{
+    font-family: 'Mooli', sans-serif;
+}
+footer{
+    
+        font-family: 'Mooli', sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+
+  .students-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sutil sombra */
+  }
+  
+  
+  .add-student {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 35%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sutil sombra */
+  }
+  
+  input, button {
+    margin-bottom: 16px;
+    padding: 8px;
+  }
+  
+/* Estilo para hacer las imágenes circulares más pequeñas y centradas en las tarjetas */
+#cardListado img {
+    border-radius: 50%;
+    width: 200px; /* Ancho deseado para el círculo */
+    height: 200px; /* Alto deseado para el círculo */
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+
+  /* Estilo para agregar un borde celeste y redondeado a las tarjetas */
+#cardListado {
+    border: 2px solid #007BFF; /* Borde celeste */
+    border-radius: 15px; /* Esquinas redondeadas */
+    margin-bottom: 15px; /* Espacio entre tarjetas */
+  }
+  
+  /* Estilo para agregar bordes redondeados de color celeste y ajustar la imagen */
+#cardShow {
+    border: 2px solid #007BFF; /* Borde celeste */
+    border-radius: 15px; /* Esquinas redondeadas */
+  }
+  
+
+  
